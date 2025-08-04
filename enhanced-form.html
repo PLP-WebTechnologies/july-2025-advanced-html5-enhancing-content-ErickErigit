@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Book your travel to top tourist destinations in Kenya. Learn about Maasai Mara, Diani, Mount Kenya, and more.">
+  <title>Kenya Travel Booking</title>
+</head>
+<body>
+  <header>
+    <h1>Explore Kenya: Book Your Adventure</h1>
+    <p>Discover breathtaking destinations and plan your trip effortlessly.</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#destinations">Top Destinations</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#form">Book a Trip</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Section: Destinations -->
+    <section id="destinations">
+      <h2>Top Travel Destinations in Kenya</h2>
+
+      <ul>
+        <li><strong>Maasai Mara:</strong> World-famous for the Great Migration and Big Five safaris.</li>
+        <li><strong>Diani Beach:</strong> White sand, turquoise waters, and relaxed coastal vibes.</li>
+        <li><strong>Mount Kenya:</strong> Africa’s second-highest peak with alpine beauty and hiking trails.</li>
+        <li><strong>Lake Nakuru:</strong> A paradise for birdwatchers and home to rhinos and flamingos.</li>
+      </ul>
+
+      <h3>At-a-Glance Comparison</h3>
+      <table border="1">
+        <caption>Top Kenyan Destinations Overview</caption>
+        <thead>
+          <tr>
+            <th>Destination</th>
+            <th>Main Attraction</th>
+            <th>Ideal Season</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Maasai Mara</td>
+            <td>Wildebeest Migration</td>
+            <td>July–October</td>
+          </tr>
+          <tr>
+            <td>Diani Beach</td>
+            <td>Beaches & Water Sports</td>
+            <td>December–March</td>
+          </tr>
+          <tr>
+            <td>Mount Kenya</td>
+            <td>Hiking & Wildlife</td>
+            <td>January–March</td>
+          </tr>
+          <tr>
+            <td>Lake Nakuru</td>
+            <td>Flamingos & Rhino Sanctuary</td>
+            <td>June–August</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Section: Gallery -->
+    <section id="gallery">
+      <h2>Visual Tour of Kenya</h2>
+      <img src="https://images.pexels.com/photos/30705119/pexels-photo-30705119.jpeg" alt="Cheetah in Maasai Mara National Reserve" width="600" height="400">
+      <img src="https://images.pexels.com/photos/5369453/pexels-photo-5369453.jpeg" alt="A herd of wildebeest crossing the Mara River during the migration" width="600" height="400">
+      <img src="https://images.pexels.com/photos/8356068/pexels-photo-8356068.jpeg" alt="White sands and clear waters at Diani Beach" width="600" height="400">
+      <img src="https://media.istockphoto.com/id/515161366/photo/sunrise-behind-mt-kenya.jpg?s=612x612&w=0&k=20&c=HholJet9EY-s9c4Fst7iF8TetXVvuUNHoUp5DnHZV_M=" alt="Majestic View of Mount Kenya at Sunset" width="600" height="400">
+      <img src="https://images.pexels.com/photos/20620394/pexels-photo-20620394.png" alt="Flamingos at Lake Nakuru" width="600" height="400">
+      <img src="https://static01.nyt.com/images/2024/04/04/multimedia/04sp-travel-lamu-inyt-02-gkmz/04sp-travel-lamu-inyt-02-gkmz-videoSixteenByNineJumbo1600.jpg" alt="Traditional dhow boats near Lamu's historic waterfront" width="600" height="400">
+      <img src="https://media.istockphoto.com/id/1413520308/photo/pack-of-african-elephants-walking-together-with-background-of-kilimanjaro-mountain-at.jpg?s=612x612&w=0&k=20&c=Qv6NJcHPgwc-RZ6hYxDsA7D0RdmcbWTYSgItxcgVrDs=" alt="Elephants walking with Mount Kilimanjaro in the background at Amboseli" width="600" height="400">
+      <img src="https://images.pexels.com/photos/752205/pexels-photo-752205.jpeg" alt="Photography of Two Zebra Eating Grass" width="600" height="400">
+    </section>
+
+    <!-- Section: Booking Form -->
+    <section id="form">
+      <h2>Book Your Trip</h2>
+      <form action="location" method="">
+        <!-- Personal Info -->
+        <fieldset>
+          <legend>Your Personal Details</legend>
+
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required placeholder="e.g. Erick Nderitu">
+
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required placeholder="e.g. yourname@example.com" autocomplete="email">
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" placeholder="e.g. +254712345678" pattern="[+0-9\s\-]{10,15}">
+        </fieldset>
+
+        <!-- Travel Info -->
+        <fieldset>
+          <legend>Travel Details</legend>
+
+          <label for="destination">Select Destination:</label>
+          <select id="destination" name="destination" required>
+            <option value="">--Please choose an option--</option>
+            <option value="maasai-mara">Maasai Mara</option>
+            <option value="diani">Diani Beach</option>
+            <option value="mt-kenya">Mount Kenya</option>
+            <option value="lake-nakuru">Lake Nakuru</option>
+            <option value="other">Other</option>
+          </select>
+
+          <label for="travel-date">Travel Date:</label>
+          <input type="date" id="travel-date" name="travel-date" required>
+
+          <label for="travelers">Number of Travelers:</label>
+          <input type="number" id="travelers" name="travelers" min="1" max="10" required placeholder="e.g. 2">
+
+          <p>Preferred Travel Package:</p>
+          <input type="radio" id="standard" name="package" value="standard" required>
+          <label for="standard">Standard</label><br>
+
+          <input type="radio" id="luxury" name="package" value="luxury">
+          <label for="luxury">Luxury</label><br>
+
+          <input type="radio" id="budget" name="package" value="budget">
+          <label for="budget">Budget</label>
+
+          <label for="requests">Special Requests:</label>
+          <textarea id="requests" name="requests" rows="4" cols="40" placeholder="Allergies, mobility needs, etc (if destination is other include details here)."></textarea>
+        </fieldset>
+
+        <!-- Confirmation -->
+        <fieldset>
+          <legend>Confirmation</legend>
+
+          <input type="checkbox" id="agree" name="agree" required>
+          <label for="agree">I confirm that the information provided is accurate and I agree to the travel terms.</label>
+
+          <p><strong>Note:</strong> Once submitted, we will contact you with package details within 48 hours.</p>
+
+          <button type="submit">Book Now</button>
+          <button type="reset">Clear Form</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Explore Kenya Tours. All rights reserved.</p>
+  </footer>
+</body>
+</html>
